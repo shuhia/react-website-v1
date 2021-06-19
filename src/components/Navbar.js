@@ -30,7 +30,6 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Alex On
-            <i class="fab fa-typo3" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -41,7 +40,16 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+          </ul>
+        </div>
+      </nav>
+    </>
+  );
+}
+
+/**
+ * 
+ *             <li className="nav-item">
               <Link
                 to="/services"
                 className="nav-links"
@@ -69,12 +77,8 @@ function Navbar() {
                 Sign Up
               </Link>
             </li>
-          </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
-        </div>
-      </nav>
-    </>
-  );
-}
+
+             {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+ */
 
 export default Navbar;
